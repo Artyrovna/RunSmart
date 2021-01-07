@@ -6,7 +6,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="img/block4/right.png"></button></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 319,
                 settings: {
                     dots: true,
                     arrows: false
@@ -111,7 +111,7 @@ $(document).ready(function(){
         }
     });
 
-    $("a[href^='#']").click(function(){
+    $("a[href=#up]").click(function(){
         var _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
